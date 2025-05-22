@@ -1,30 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contatos</title>
+    <title>Pagina de contato do portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>pagina de contatos</h1>
+        <h1>Pagina de contato</h1>
         <nav>
-    
+            <ul>
+                <li>
+                    <!-- href é um dos atributos da ancora-->
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
         </nav>
     </header>
-        <main>
-            <section>
-                <h1>meus projetos</h1>
-                <p>
-                   
-                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, nam at nemo unde esse animi earum fugiat officiis mollitia tempore, ducimus sunt maxime odio. Fuga accusamus tempore ea voluptatem officia?
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad veniam ipsum ducimus, laudantium sint velit error excepturi doloremque molestiae rerum dicta perspiciatis eos architecto earum expedita omnis consequatur accusantium. Quaerat?
-                </p>    
-            </section>
-        </main>
-    
-    
+    <main>
+        <section>
+            <form id="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" readonly="true">
+                <hr>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite o seu e-mail">
+                <hr>               
+                <label for="assunto">Assunto:</label>
+                <select name="opcao" id="opcao-serviço">
+                    <option value="barbeiro">Barbeiro</option>
+                    <option value="lavar-carro">Lavar o Carro</option>
+                </select>
+                <hr>
+                <label for="texto">Digite o texto</label>
+                <textarea name="texto" id="" cols="30" rows="10" maxlength="500">Digite o texto</textarea>
+                <button class="Enviar">Enviar</button>
+                <button class="Limpar" type="reset">Limpar</button>
+            </form>
+        </section>
+        <aside>
+            <article>
+                <h1>Redes Sociais</h1>
+                <ul>
+                    <li>
+                        <a href="https://youtube.com/" target="_blank">Youtube</a>
+                    </li>
+                    <li>
+                        <a href="http://github.com/" target="_blank">Github</a>
+                    </li>
+                </ul>
+            </article>
+        </aside>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
